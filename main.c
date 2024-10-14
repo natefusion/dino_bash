@@ -480,10 +480,6 @@ void print_prompt(char *path) {
 int main(void) {
     cstr path = get_current_dir_name();
 
-    // removes any child processes that haven't terminated.
-    // Used to handle background processes.
-    signal(SIGCHLD, SIG_IGN); 
-    
     motd();
     for (;;) {
         Arena arena = {0};
