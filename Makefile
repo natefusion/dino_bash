@@ -35,7 +35,7 @@ clean:
 	rm -f $(EXECUTABLE) $(OBJS) $(DEPS)
 
 install:
-	cp $(RELEASE)/$(NAME) /bin/
+	cp $(EXECUTABLE) /bin/
 
 uninstall:
 	rm -f /bin/$(NAME)
